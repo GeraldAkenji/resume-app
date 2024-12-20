@@ -1,0 +1,18 @@
+services:
+  resume-app: 
+    container_name: gerald-resume-site
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+      - 3431:5001
+    environment: 
+      - USER=gerald
+    networks:
+      - mentorship-site-net
+
+networks:
+  mentorship-site-net:
+    external: true
+    
+      

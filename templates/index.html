@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Profile Photo" class="img-fluid rounded-circle mb-3">
+    </div>
+    <div class="col-md-8">
+        <h1>GERALD AKENJI</h1>
+        <p>A self-motivated DevOps/Cloud Engineer offering about 5 years of experience in enterprise environments with proficiency in cloud orchestration,
+             security, identity & access management, monitoring and event management, governance & compliance, application delivery, data protection, image and patch management, self-service in AWS & Azur platform.
+        </p>
+        <ul class="list-unstyled">
+            <li><strong>Email:</strong> akenjigerald53@gmail.com</li>
+            <li><strong>Phone:</strong> +1 403-667-7469</li>
+        </ul>
+    </div>
+</div>
+<hr>
+<h2>Skills</h2>
+<ul>
+    <li>Python, Flask, JavaScript</li>
+    <li>Docker, Kubernetes, Terraform</li>
+    <li>DevOps, Cloud Security, AWS</li>
+    <li>CI/CD Pipelines, Ansible</li>
+</ul>
+<hr>
+<h2>Experience</h2>
+<div>
+    <h4>Software Engineer</h4>
+    <p>Elysian Air | Jan 2022 - Present</p>
+    <p>Developed scalable web applications and deployed solutions in the cloud.</p>
+</div>
+{% endblock %}
